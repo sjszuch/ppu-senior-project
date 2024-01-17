@@ -16,3 +16,13 @@ html {
 
   background-color: #1e1e1e;
 }
+
+a {
+  text-decoration: none;
+  color: #d8beff;
+
+  &:hover {
+    color: #af7dfb;
+    transition: 0.3s;
+  }
+}
