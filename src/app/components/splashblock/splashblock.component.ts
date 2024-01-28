@@ -14,6 +14,7 @@ export class SplashblockComponent {
   @Input() pos!: string;
   @Input() rating!: string;
   @Input() id!: string;
+  @Input() comments!: string[];
 
   constructor(public dialog: MatDialog) { }
 
@@ -24,7 +25,12 @@ export class SplashblockComponent {
   openEvals(id: string) {
     this.dialog.open(DialogEvalsComponent, {
       data: {
-        id: id
+        id: id,
+        fName: this.fName,
+        lName: this.lName,
+        comments: this.comments,
+        rating: this.rating,
+        ratingsarray: [1, 2, 3]
       }
     });
   }

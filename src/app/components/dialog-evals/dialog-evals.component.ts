@@ -11,11 +11,13 @@ import { Inject } from '@angular/core';
 
 export class DialogEvalsComponent {
   constructor(
-    @Inject(MAT_DIALOG_DATA) public id: any
+    @Inject(MAT_DIALOG_DATA) public id: any,
+
  ) { }
 
+ 
+
  ngOnInit() {
-  // will log the entire data object
   console.log(this.id)
 }
 

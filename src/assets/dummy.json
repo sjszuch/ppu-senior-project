@@ -7,7 +7,7 @@
             "position": "Manager",
             "averageRating": 4.2,
             "ratings": [3, 4, 5, 4],
-            "comments": ["Test comment", "Test comment", "Test comment"]
+            "comments": ["John Comment", "Test comment", "Test comment", "Test comment", "Test comment", "Test comment", "Test comment", "Test comment"]
         },
         {
             "id": 67890,
@@ -16,7 +16,7 @@
             "position": "Developer",
             "averageRating": 4.8,
             "ratings": [5, 5, 4, 5],
-            "comments": ["Test comment", "Test comment", "Test comment"]
+            "comments": ["Jane Comment", "Test comment", "Test comment"]
         },
         {
             "id": 54321,
@@ -25,7 +25,7 @@
             "position": "Designer",
             "averageRating": 3.9,
             "ratings": [3, 4, 3, 4],
-            "comments": ["Test comment", "Test comment", "Test comment"]
+            "comments": ["Michael comment", "Test comment", "Test comment"]
         },
         {
             "id": 98765,
@@ -34,7 +34,7 @@
             "position": "Tester",
             "averageRating": 4.1,
             "ratings": [4, 3, 5, 4],
-            "comments": ["Test comment", "Test comment", "Test comment"]
+            "comments": ["Emily comment", "Test comment", "Test comment"]
         },
         {
             "id": 24680,
@@ -43,7 +43,7 @@
             "position": "Analyst",
             "averageRating": 4.5,
             "ratings": [5, 4, 4, 5],
-            "comments": ["Test comment", "Test comment", "Test comment"]
+            "comments": ["David comment", "Test comment", "Test comment"]
         }
     ]
 }
