@@ -1,0 +1,6 @@
+Things to add:
+
+1 - When an employee's picture is clicked on, bring up a scrollable dialog menu that shows all of their
+previous ratings
+
+2 - Rating an employee sends the comment and rating to the backend
