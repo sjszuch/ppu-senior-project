@@ -20,6 +20,7 @@ img {
 .buttons {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .name {
@@ -30,7 +31,11 @@ img {
 
 .rating {
   background-color: rgb(159, 125, 255);
-  height: fit-content;
+  height: 1.5rem;
+  width: 1.5rem;
   padding: 0.5rem;
   border-radius: 100%;
+  text-align: center;
+
+  font-weight: 700;
 }

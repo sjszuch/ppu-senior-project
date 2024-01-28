@@ -30,6 +30,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 0.5rem;
 }
 
 .name {
@@ -45,10 +46,11 @@ img {
 
 .rating {
   background-color: #9f7dff;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 1.5rem;
+  width: 1.5rem;
   padding: 0.5rem;
   border-radius: 100%;
+  text-align: center;
+  font-weight: 700;
 }
 /*# sourceMappingURL=splashblock.component.css.map */

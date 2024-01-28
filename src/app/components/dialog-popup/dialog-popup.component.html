@@ -1,0 +1,30 @@
+<div class="container">
+  <h2 mat-dialog-title>Firstname Lastname Evaluation:</h2>
+  <mat-dialog-content>
+    <p>Add today's rating for Firstname Lastname.</p></mat-dialog-content
+  >
+  <mat-dialog-actions>
+    <!-- mat form that takes text for the user's comments -->
+    <mat-form-field>
+      <mat-label>Comment</mat-label>
+      <input matInput placeholder="Comment" />
+    </mat-form-field>
+
+    <!-- mat dropdown used to add a rating 1-5 -->
+    <mat-form-field>
+      <mat-label>Rating</mat-label>
+      <mat-select>
+        <mat-option value="1">1</mat-option>
+        <mat-option value="2">2</mat-option>
+        <mat-option value="3">3</mat-option>
+        <mat-option value="4">4</mat-option>
+        <mat-option value="5">5</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-button mat-dialog-close="" (click)="openSnackBar()">
+      Submit
+    </button>
+    <button mat-button mat-dialog-close="">Cancel</button>
+  </mat-dialog-actions>
+</div>
