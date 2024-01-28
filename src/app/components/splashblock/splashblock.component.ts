@@ -18,19 +18,24 @@ export class SplashblockComponent {
 
   constructor(public dialog: MatDialog) { }
 
-  openDialog() {
-    this.dialog.open(DialogPopupComponent);
+  openDialog(id: string) {
+    this.dialog.open(DialogPopupComponent, {
+      data: {
+        id: id,
+        comments: this.comments,
+        fName: this.fName,
+        lName: this.lName
+      }
+    });
   }
 
   openEvals(id: string) {
     this.dialog.open(DialogEvalsComponent, {
       data: {
         id: id,
-        fName: this.fName,
-        lName: this.lName,
         comments: this.comments,
-        rating: this.rating,
-        ratingsarray: [1, 2, 3]
+        fName: this.fName,
+        lName: this.lName
       }
     });
   }
