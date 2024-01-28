@@ -3,29 +3,13 @@
 <!-- This is where all of the employees will be -->
 <div class="top">
   <p>My Group</p>
-  <!-- NgFor for each employee that is in the database -->
-  <app-splashblock
-    fName="Bobbie"
-    lName="Porter"
-    pos="Lead Sales"
-    rating="4.7"
-  ></app-splashblock>
 
+  <!-- For loop: for each employee in the employees array -->
   <app-splashblock
-    fName="Rodger"
-    lName="English"
-    pos="Sales Associate"
-    rating="4.7"
+    *ngFor="let i of employees"
+    fName="{{ i.firstName }}"
+    lName="{{ i.lastName }}"
+    pos="{{ i.position }}"
+    rating="{{ i.averageRating }}"
   ></app-splashblock>
-
-  <app-splashblock
-    fName="Kendrick"
-    lName="Wilkins"
-    pos="Receptionist"
-    rating="4.7"
-  ></app-splashblock>
-
-  <p>Second Group</p>
-  <app-splashblock></app-splashblock>
-  <app-splashblock></app-splashblock>
 </div>

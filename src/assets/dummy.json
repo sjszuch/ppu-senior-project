@@ -1,0 +1,39 @@
+{
+    "employees": [
+        {
+            "firstName": "John",
+            "lastName": "Doe",
+            "position": "Manager",
+            "averageRating": 4.2,
+            "ratings": [3, 4, 5, 4]
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "position": "Developer",
+            "averageRating": 4.8,
+            "ratings": [5, 5, 4, 5]
+        },
+        {
+            "firstName": "Michael",
+            "lastName": "Johnson",
+            "position": "Designer",
+            "averageRating": 3.9,
+            "ratings": [3, 4, 3, 4]
+        },
+        {
+            "firstName": "Emily",
+            "lastName": "Brown",
+            "position": "Tester",
+            "averageRating": 4.1,
+            "ratings": [4, 3, 5, 4]
+        },
+        {
+            "firstName": "David",
+            "lastName": "Wilson",
+            "position": "Analyst",
+            "averageRating": 4.5,
+            "ratings": [5, 4, 4, 5]
+        }
+    ]
+}
