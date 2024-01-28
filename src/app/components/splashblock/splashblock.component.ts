@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogPopupComponent } from '../dialog-popup/dialog-popup.component';
+import { DialogEvalsComponent } from '../dialog-evals/dialog-evals.component';
 
 @Component({
   selector: 'app-splashblock',
@@ -12,10 +13,19 @@ export class SplashblockComponent {
   @Input() lName!: string;
   @Input() pos!: string;
   @Input() rating!: string;
+  @Input() id!: string;
 
   constructor(public dialog: MatDialog) { }
 
   openDialog() {
     this.dialog.open(DialogPopupComponent);
+  }
+
+  openEvals(id: string) {
+    this.dialog.open(DialogEvalsComponent, {
+      data: {
+        id: id
+      }
+    });
   }
 }

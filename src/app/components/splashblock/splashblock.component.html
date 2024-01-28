@@ -1,15 +1,18 @@
 <div class="container">
-  <img src="assets/default_pfp.jpg" alt="" />
+  <img src="assets/default_pfp.jpg" alt="" (click)="openEvals(id)" />
 
   <div class="text">
     <div class="name">
       <p>{{ fName }}</p>
       <p>{{ lName }}</p>
+
+      <!-- Displays if no name is found / error message -->
       <div class="" *ngIf="fName == null">
         <p>No Name Found</p>
       </div>
     </div>
 
+    <!-- Employee's position / title -->
     <p>{{ pos }}</p>
   </div>
 

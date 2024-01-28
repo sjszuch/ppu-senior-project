@@ -26,6 +26,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatIconModule} from '@angular/material/icon';
+import { DialogEvalsComponent } from './components/dialog-evals/dialog-evals.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {MatIconModule} from '@angular/material/icon';
     SplashblockComponent,
     PageSplashComponent,
     TopnavComponent,
-    DialogPopupComponent
+    DialogPopupComponent,
+    DialogEvalsComponent
   ],
   imports: [
     BrowserModule,

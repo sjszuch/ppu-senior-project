@@ -22,6 +22,14 @@ img {
   border-radius: 5px;
 }
 
+img:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
