@@ -1,0 +1,64 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  background-color: #00000048;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+}
+
+img:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.3rem;
+}
+
+.rating {
+  background-color: #9f7dff;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+/*# sourceMappingURL=splashblock.component.css.map */

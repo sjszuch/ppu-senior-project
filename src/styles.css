@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&family=Roboto&display=swap");
-
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -13,19 +12,17 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
-
   background-color: #1e1e1e;
 }
 
 a {
   text-decoration: none;
   color: #d8beff;
-
-  &:hover {
-    color: #af7dfb;
-    transition: 0.3s;
-  }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a:hover {
+  color: #af7dfb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=styles.css.map */

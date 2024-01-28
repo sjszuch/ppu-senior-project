@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 mat-dialog-title>Ratings for {{ id.fName }} {{ id.lName }}:</h2>
+  <mat-dialog-content>
+    <!-- Employee ID -->
+    <p>ID: {{ id.id }}</p>
+
+    <!-- Shows each comment for an employee -->
+    <p *ngFor="let comment of id.comments; let i = index">
+      {{ comment }}
+    </p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close="">Close</button>
+  </mat-dialog-actions>
+</div>

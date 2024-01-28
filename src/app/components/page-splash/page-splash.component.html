@@ -1,0 +1,17 @@
+<app-topnav></app-topnav>
+
+<!-- This is where all of the employees will be -->
+<div class="top">
+  <p>My Group</p>
+
+  <!-- For loop: for each employee in the employees array -->
+  <app-splashblock
+    *ngFor="let i of employees"
+    fName="{{ i.firstName }}"
+    lName="{{ i.lastName }}"
+    pos="{{ i.position }}"
+    rating="{{ i.averageRating }}"
+    id="{{ i.id }}"
+    [comments]="[i.comments]"
+  ></app-splashblock>
+</div>
