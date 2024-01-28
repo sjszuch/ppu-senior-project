@@ -1,0 +1,23 @@
+<div class="container">
+  <img src="assets/default_pfp.jpg" alt="" />
+
+  <div class="text">
+    <div class="name">
+      <p>{{ fName }}</p>
+      <p>{{ lName }}</p>
+      <div class="" *ngIf="fName == null">
+        <p>No Name Found</p>
+      </div>
+    </div>
+
+    <p>{{ pos }}</p>
+  </div>
+
+  <p class="rating">{{ rating }}</p>
+
+  <div class="buttons">
+    <a href="">Rate</a>
+    <a href="">Comment</a>
+    <a href="">Info</a>
+  </div>
+</div>
