@@ -18,7 +18,6 @@ export class PageSplashComponent implements OnInit {
   employees: any[] = this.data.employees;
 
   apiData: any;
-  dbInfo: any;
 
   constructor(private http: HttpClient) {}
 
@@ -30,7 +29,6 @@ export class PageSplashComponent implements OnInit {
     this.http.get('http://localhost:3000/api/data').subscribe(
       (data: any) => {
         console.log('Data from server:', data);
-        this.dbInfo = data;
         this.apiData = data;
       },
       (error) => {
