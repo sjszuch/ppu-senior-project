@@ -27,6 +27,10 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatIconModule} from '@angular/material/icon';
 import { DialogEvalsComponent } from './components/dialog-evals/dialog-evals.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+import { map, catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
 
 
 @NgModule({
@@ -49,7 +53,9 @@ import { DialogEvalsComponent } from './components/dialog-evals/dialog-evals.com
     MatFormFieldModule,
     MatSelectModule,
     MatSnackBarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
