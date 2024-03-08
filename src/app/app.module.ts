@@ -27,6 +27,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatIconModule} from '@angular/material/icon';
 import { DialogEvalsComponent } from './components/dialog-evals/dialog-evals.component';
+import { AddblockComponent } from './components/addblock/addblock.component';
+import { AddpopupComponent } from './components/addpopup/addpopup.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { DialogEvalsComponent } from './components/dialog-evals/dialog-evals.com
     PageSplashComponent,
     TopnavComponent,
     DialogPopupComponent,
-    DialogEvalsComponent
+    DialogEvalsComponent,
+    AddblockComponent,
+    AddpopupComponent,
   ],
   imports: [
     BrowserModule,
