@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Entry</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Entry</h2>
+        <form id="addEntryForm">
+            <div class="form-group">
+                <label for="first name">First Name:</label>
+                <input type="text" id="first name" name="first name" required>
+            </div>
+            <div class="form-group">
+                <label for="last name">Email:</label>
+                <input type="last name" id="last name" name="last name" required>
+            </div>
+           <div class="form-group">
+                <label for="position">Email:</label>
+                <input type="position" id="position" name="position" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Entry</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
