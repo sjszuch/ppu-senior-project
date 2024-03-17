@@ -65,6 +65,24 @@
         function redirectToDashboard() {
             window.location.href = "@angular";
         }
+      
+function fetchData() {
+    fetch('/data')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
+fetchData();
+
     </script>
 
 </body>
