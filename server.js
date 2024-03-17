@@ -3,8 +3,8 @@
 const http = require('http');
 const options = {
     hostname: 'https://www.nginx.com/', // update with NGINX server url
-    port: 443,
-    path: '/data', // update with NGINX path
+    port: 40,
+    path: '/data', // update with proper NGINX path
     method: 'GET'
 };
 
@@ -22,3 +22,17 @@ req.on('error', (error) => {
     console.error('Error:', error);
 });
 req.end();
+
+fetch('/data')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Request failed');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error.message);
+    });
