@@ -33,8 +33,8 @@ const pool = new pg.Pool({
 app.get('/api/data', async (req, res) => {
   try {
     const query = 'SELECT * FROM employees';
-    const data = await pool.query(query); // Executing the query using the connection pool
-    res.json(data.rows); // Sending the retrieved rows as JSON
+    const data = await pool.query(query);
+    res.json(data.rows);
   } catch (error) {
     console.error('Error fetching data from PostgreSQL:', error);
     res.status(500).json({ error: 'Internal Server Error' });

@@ -26,7 +26,7 @@ export class PageSplashComponent implements OnInit {
   }
 
   getDataFromServer() {
-    this.http.get('http://localhost:3000/api/data').subscribe(
+    this.http.get('https://ppu-senior-project.onrender.com/api/data').subscribe(
       (data: any) => {
         console.log('Data from server:', data);
         this.apiData = data;
