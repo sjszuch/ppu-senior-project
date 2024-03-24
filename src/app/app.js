@@ -39,8 +39,8 @@ app.get('/api/data', async (req, res) => {
 
 // NEW ENTRY
 app.post('/api/newentry', async (req, res) => {
-  const query = 'INSERT INTO employees (name, age) VALUES (john, 21)';
-  const data = await pool.query(query, ['John Doe', 30]);
+  const query = 'INSERT INTO employees (first_name, last_name, position) VALUES ($1, $2, $3)';
+  const data = await pool.query(query, [req.body.first_name, req.body.last_name, req.body.position]);
   res.json(data);
 });
 
