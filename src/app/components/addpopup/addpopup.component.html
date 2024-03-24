@@ -7,27 +7,42 @@
     <!-- mat form that takes text for the user's comments -->
     <mat-form-field>
       <mat-label>First Name:</mat-label>
-      <input matInput placeholder="First Name" />
+      <input
+        matInput
+        placeholder="First Name"
+        [(ngModel)]="firstName"
+        name="firstName"
+      />
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Last Name:</mat-label>
-      <input matInput placeholder="Last Name" />
+      <input
+        matInput
+        placeholder="Last Name"
+        [(ngModel)]="lastName"
+        name="lastName"
+      />
     </mat-form-field>
 
     <!-- mat dropdown used to add a rating 1-5 -->
     <mat-form-field>
       <mat-label>Position</mat-label>
-      <mat-select>
+      <mat-select [(ngModel)]="position" name="position">
         <!-- These selections will be determined by the database in future versions -->
-        <mat-option value="1">Manager</mat-option>
-        <mat-option value="2">Employee</mat-option>
-        <mat-option value="3">Other</mat-option>
+        <mat-option value="Manager">Manager</mat-option>
+        <mat-option value="Employee">Employee</mat-option>
+        <mat-option value="Other">Other</mat-option>
       </mat-select>
     </mat-form-field>
 
+    <mat-form-field>
+      <mat-label>ID:</mat-label>
+      <input matInput placeholder="ID" [(ngModel)]="id" name="id" />
+    </mat-form-field>
+
     <!-- When submitted call function that sends rating to backend via the ID -->
-    <button mat-button mat-dialog-close="" (click)="openSnackBar()">
+    <button mat-button mat-dialog-close="" (click)="submitEmployee()">
       Submit
     </button>
     <button mat-button mat-dialog-close="">Cancel</button>
