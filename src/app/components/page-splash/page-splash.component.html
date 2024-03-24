@@ -7,10 +7,10 @@
   <!-- For loop: for each employee in the employees array -->
   <app-splashblock
     *ngFor="let i of apiData"
-    fName="{{ i.firstName }}"
-    lName="{{ i.lastName }}"
+    fName="{{ i.first_name }}"
+    lName="{{ i.last_name }}"
     pos="{{ i.position }}"
-    rating="{{ i.averageRating }}"
+    rating="{{ i.average_rating }}"
     id="{{ i.id }}"
     [comments]="[i.comments]"
   ></app-splashblock>
