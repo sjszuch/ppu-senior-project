@@ -31,6 +31,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { map, catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
+import { AddblockComponent } from './components/addblock/addblock.component';
+import { AddpopupComponent } from './components/addpopup/addpopup.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { throwError } from 'rxjs';
     PageSplashComponent,
     TopnavComponent,
     DialogPopupComponent,
-    DialogEvalsComponent
+    DialogEvalsComponent,
+    AddblockComponent,
+    AddpopupComponent,
   ],
   imports: [
     BrowserModule,
