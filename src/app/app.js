@@ -56,6 +56,21 @@ app.post('/api/newentry', async (req, res) => {
   }
 });
 
+// NEW COMMENT
+app.post('/api/newrating', async (req, res) => {
+  try {
+    const { comment, id } = req.body;
+
+    const query = 'UPDATE employees SET comments = array_append(comments, $1) WHERE id = $2';
+    const data = await pool.query(query, [comment, id]);
+
+    res.json({ success: true, message: 'New comment added successfully', data });
+  } catch (error) {
+    console.error('Error adding new comment:', error);
+    res.status(500).json({ error: 'Error' });
+  }
+});
+
 
 
 // const db = mysql.createConnection({
