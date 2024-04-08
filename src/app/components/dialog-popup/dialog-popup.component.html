@@ -9,13 +9,18 @@
     <!-- mat form that takes text for the user's comments -->
     <mat-form-field>
       <mat-label>Comment</mat-label>
-      <input matInput placeholder="Comment" />
+      <input
+        matInput
+        placeholder="Comment"
+        [(ngModel)]="comment"
+        name="comment"
+      />
     </mat-form-field>
 
     <!-- mat dropdown used to add a rating 1-5 -->
     <mat-form-field>
       <mat-label>Rating</mat-label>
-      <mat-select>
+      <mat-select [(ngModel)]="rating" name="rating">
         <mat-option value="1">1</mat-option>
         <mat-option value="2">2</mat-option>
         <mat-option value="3">3</mat-option>
@@ -25,7 +30,7 @@
     </mat-form-field>
 
     <!-- When submitted call function that sends rating to backend via the ID -->
-    <button mat-button mat-dialog-close="" (click)="openSnackBar()">
+    <button mat-button mat-dialog-close="" (click)="submitRating()">
       Submit
     </button>
     <button mat-button mat-dialog-close="">Cancel</button>
