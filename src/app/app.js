@@ -56,6 +56,23 @@ app.post('/api/newentry', async (req, res) => {
   }
 });
 
+// jiten entry
+
+// DELETE request to delete an entry
+app.delete('/api/delete/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    // database query
+    const query = 'DELETE FROM employees WHERE id = $1';
+    await pool.query(query, [id]);
+
+    res.json({ success: true, message: 'Entry deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting entry:', error);
+    res.status(500).json({ error: 'Error' });
+  }
+});
 
 
 // const db = mysql.createConnection({

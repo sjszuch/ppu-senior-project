@@ -33,6 +33,9 @@ import { map, catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 import { AddblockComponent } from './components/addblock/addblock.component';
 import { AddpopupComponent } from './components/addpopup/addpopup.component';
+import { DeleteblockComponent } from './components/deleteblock/deleteblock.component';
+import { DeletepopupComponent } from './components/deletepopup/deletepopup.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -45,6 +48,9 @@ import { AddpopupComponent } from './components/addpopup/addpopup.component';
     DialogEvalsComponent,
     AddblockComponent,
     AddpopupComponent,
+    DeleteblockComponent,
+    DeletepopupComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
