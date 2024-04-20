@@ -49,7 +49,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AddblockComponent,
     AddpopupComponent,
     DeleteblockComponent,
-    DeletepopupComponent,
+    DeletepopupComponent, 
     FooterComponent,
   ],
   imports: [
