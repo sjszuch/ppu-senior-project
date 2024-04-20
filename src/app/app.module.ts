@@ -28,6 +28,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatIconModule} from '@angular/material/icon';
 import { DialogEvalsComponent } from './components/dialog-evals/dialog-evals.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { map, catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
@@ -65,7 +66,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatSnackBarModule,
     MatIconModule,
     HttpClientModule,
-    
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

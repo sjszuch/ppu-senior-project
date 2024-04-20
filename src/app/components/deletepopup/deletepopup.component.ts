@@ -29,14 +29,13 @@ export class DeletepopupComponent {
 
   // Deletes an employee based on ID
   deleteEmployee() {
-    const apiUrl = 'https://ppu-senior-project.onrender.com/api/delete/id:'; // Assuming endpoint for delete operation
+    const apiUrl = 'https://ppu-senior-project.onrender.com/api/delete/id:'; 
 
     this.http.delete(`${apiUrl}/${this.id}`)
       .subscribe({
         next: (response: any) => {
           console.log('API Response:', response);
           this.openSnackBar('Employee deleted successfully');
-          // Optionally, you can perform any additional actions after deletion
         },
         error: (error: any) => {
           console.error('API Error:', error);

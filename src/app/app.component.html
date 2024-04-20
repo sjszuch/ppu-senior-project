@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<!-- main page -->
+<div class="custom-spinner" *ngIf="isLoading">
+    <div class="spinner-inner"></div>
+</div>
+
+<div *ngIf="!isLoading">
+    <router-outlet></router-outlet>
+</div>
+
+
+
