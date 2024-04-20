@@ -1,6 +1,5 @@
 
 // DELETE request
-// import { Component } from '@angular/core';
 import { Component } from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {MAT_DIALOG_DATA} from '@angular/material/dialog';

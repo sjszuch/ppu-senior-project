@@ -1,9 +1,7 @@
 .container {
   background-color: #55428b;
   padding: 1rem;
-  /* added by jiten */
   justify-content: space-between;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
