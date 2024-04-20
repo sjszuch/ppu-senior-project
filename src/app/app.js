@@ -56,9 +56,8 @@ app.post('/api/newentry', async (req, res) => {
   }
 });
 
-// jiten entry
 
-// DELETE request to delete an entry
+// DELETE request to delete an employee
 app.delete('/api/delete/:id', async (req, res) => {
   try {
     const id = req.params.id;
