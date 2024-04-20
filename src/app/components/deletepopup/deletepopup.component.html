@@ -1,0 +1,22 @@
+
+<!-- added deletepopup components -->
+<div class="container">
+    <h2 mat-dialog-title>Delete Employee:</h2>
+    <mat-dialog-content>
+      <p>Enter ID of an employee</p></mat-dialog-content
+    >
+    <mat-dialog-actions>
+      <!-- mat form that takes id for the user's comments -->
+      <mat-form-field>
+        <mat-label>ID:</mat-label>
+        <input matInput placeholder="ID" [(ngModel)]="id" name="id" />
+      </mat-form-field>
+  
+      <!-- When submitted call function that sends  to backend via the ID -->
+      <button mat-button mat-dialog-close="" (click)="deleteEmployee()">
+        Delete
+      </button>
+      <button mat-button mat-dialog-close="">Cancel</button>
+    </mat-dialog-actions>
+  </div>
+  
