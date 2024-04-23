@@ -73,6 +73,9 @@ app.delete('/api/delete/:id', async (req, res) => {
   }
 });
 
+// DELETE by ID
+
+
 
 // const db = mysql.createConnection({
 //   host: 'localhost',
