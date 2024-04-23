@@ -8,6 +8,10 @@
     <p *ngFor="let comment of id.comments; let i = index">
       {{ comment }}
     </p>
+
+    <p *ngFor="let rating of id.ratings; let i = index">
+      {{ rating }}
+    </p>
   </mat-dialog-content>
   <mat-dialog-actions>
     <button mat-button mat-dialog-close="">Close</button>

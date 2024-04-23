@@ -16,6 +16,19 @@ export class SplashblockComponent {
   @Input() id!: string;
   @Input() comments!: string[];
 
+  @Input() ratings!: string[];
+
+  averageRating: number = 0;
+
+  // On init, calculates the average rating of the employee from the ratings array
+  ngOnInit() {
+    let total = 0;
+    for (let i = 0; i < this.ratings.length; i++) {
+      total += parseInt(this.ratings[i]);
+    }
+    this.averageRating = total / this.ratings.length;
+  }
+
   constructor(public dialog: MatDialog) { }
 
   openDialog(id: string) {
@@ -24,7 +37,8 @@ export class SplashblockComponent {
         id: id,
         comments: this.comments,
         fName: this.fName,
-        lName: this.lName
+        lName: this.lName,
+        ratings: this.ratings
       }
     });
   }
@@ -35,7 +49,8 @@ export class SplashblockComponent {
         id: id,
         comments: this.comments,
         fName: this.fName,
-        lName: this.lName
+        lName: this.lName,
+        ratings: this.ratings
       }
     });
   }

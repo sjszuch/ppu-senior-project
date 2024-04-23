@@ -13,19 +13,15 @@
     rating="{{ i.average_rating }}"
     id="{{ i.id }}"
     [comments]="[i.comments]"
+    [ratings]="[i.ratings]"
   ></app-splashblock>
 
   <!-- New entry button (brings up adding/post page) -->
   <app-addblock></app-addblock>
 
-    <!-- jiten added this delete button -->
-    <app-deleteblock></app-deleteblock>
-  </div>
-  
-  <!-- jiten added this footer section -->
-   <app-footer></app-footer> 
+  <!-- jiten added this delete button -->
+  <app-deleteblock></app-deleteblock>
+</div>
 
-
-
-
-
+<!-- jiten added this footer section -->
+<app-footer></app-footer>

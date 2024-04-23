@@ -46,7 +46,8 @@ export class DialogPopupComponent {
 
       comment: this.comment,
       id: this.id.id,
-      // rating: this.rating
+      rating: this.rating
+
     };
 
     const apiUrl = 'https://ppu-senior-project.onrender.com/api/newrating';
