@@ -56,6 +56,22 @@ app.post('/api/newentry', async (req, res) => {
   }
 });
 
+// NEW COMMENT AND RATING FOR AN EMPLOYEE BASED ON ID
+app.post('/api/newrating', async (req, res) => {
+  try {
+    const { id, comment, rating } = req.body;
+
+    const query = 'UPDATE employees SET comments = array_append(comments, $1), ratings = array_append(ratings, $2) WHERE id = $3';
+    const data = await pool.query(query, [comment, rating, id]);
+
+    res.json({ success: true, message: 'New comment and rating added successfully', data });
+  } catch (error) {
+    console.error('Error adding new comment and rating:', error);
+    res.status(500).json({ error: 'Error' });
+  }
+});
+
+
 
 // DELETE request to delete an employee
 app.delete('/api/delete/:id', async (req, res) => {
